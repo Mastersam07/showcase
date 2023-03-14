@@ -34,14 +34,6 @@ class MyApp extends StatelessWidget {
           },
           onComplete: (index, key) {
             print('onComplete: $index, $key');
-            if (index == 4) {
-              SystemChrome.setSystemUIOverlayStyle(
-                SystemUiOverlayStyle.light.copyWith(
-                  statusBarIconBrightness: Brightness.dark,
-                  statusBarColor: Colors.white,
-                ),
-              );
-            }
           },
           blurValue: 1,
           builder: Builder(
